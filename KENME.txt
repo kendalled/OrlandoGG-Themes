@@ -1,0 +1,34 @@
+:root {
+  --font: "RobotoCondensed";
+  --border-radius: 16px;
+  --text-color: white;
+  --bg-color:  rgba(181, 48, 91, 1);
+  --p1-score-bg-color: linear-gradient(
+    135deg,
+    rgba(181, 48, 91, 1) 0%,
+    rgba(125, 25, 57, 1) 100%
+  );
+  --p2-score-bg-color: linear-gradient(
+    225deg,
+    rgba(246, 199, 34, 1) 0%,
+    rgba(154, 110, 12, 1) 100%
+  );
+  --p1-sponsor-color: #ff7a6d;
+  --p2-sponsor-color: #29b6f6;
+  --p1-score-color: white;
+  --p2-score-color: white;
+}
+
+
+\--p1-sponsor-color: #ff7a6d;
+  --p2-sponsor-color: #29b6f6;
+  --p1-score-color: white;
+  --p2-score-color: white;
+
+
+CHANGE INSTRUCTIONS
+( all inside of layout folder)
+- main.css
+-scoreboard folder > index.css (NEED CIRQUE ONE)
+-bracket folder > * (entire folder)
+-logo file (PNG)

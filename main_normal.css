@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "NotoSans";
+  src: url("./include/NotoSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("./include/RobotoCondensed.ttf") format("truetype");
+}
+
+/* Class used for transcriptions, example: Kana -> Romaji (Japanese to Roman alphabet) */
+.tsh_transcript {
+  font-size: 60%;
+  text-transform: uppercase;
+  align-self: end;
+}
+
+.tsh_character_container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.tsh_character,
+.tsh_character > div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap;
+  display: flex;
+  min-width: 100%;
+  width: fit-content;
+  place-items: center;
+  place-content: center;
+  height: 100%;
+  gap: inherit;
+  transform-origin: left;
+}
+
+/* Main theme -- Dark Gradient */
+body > div.anim_container_outer > div > div.p1.container > div.inner_container > div.score.tsh-fit-content {
+  background: #0f2c3f;
+  color: #e7a515;
+}
+body > div.anim_container_outer > div > div.p2.container > div.inner_container > div.score.tsh-fit-content {
+  background: #0f2c3f;
+  color: #e7a515;
+}
+:root {
+  --font: "RobotoCondensed";
+  --border-radius: 16px;
+  --text-color: white;
+  --bg-color:  #406983;
+  --p1-score-bg-color: linear-gradient(
+    135deg,
+    rgba(10, 10, 10, 1) 0%,
+    rgba(10, 10, 10, 1) 100%
+  );
+  --p2-score-bg-color: linear-gradient(
+    225deg,
+    rgba(246, 199, 34, 1) 0%,
+    rgba(154, 110, 12, 1) 100%
+  );
+  --p1-sponsor-color: #b6810e;
+  --p2-sponsor-color: #b6810e;
+  --p1-score-color: white;
+  --p2-score-color: white;
+}
+
+/* Uncomment for themes */
+
+/* Dark Solid Theme */
+/* :root {
+  --text-color: white;
+  --bg-color: #18181b;
+  --p1-score-bg-color: #ff3837ff;
+  --p2-score-bg-color: #1255a3ff;
+  --p1-score-color: white;
+  --p2-score-color: white;
+} */
+
+/* Light Gradient Theme */
+/* :root {
+  --text-color: black;
+  --bg-color: #e2ebf0ff;
+  --p1-sponsor-color: #a31212;
+  --p2-sponsor-color: #1255a3ff;
+} */
